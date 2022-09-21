@@ -2,7 +2,8 @@ import { Router } from 'express'
 
 const router = Router()
 
-/* GET users listing. */
+
+/* GET skills listing. */
 router.get('/', function(req, res) {
   res.send('respond with a resource')
 })
