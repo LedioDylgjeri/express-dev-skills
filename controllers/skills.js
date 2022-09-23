@@ -2,10 +2,12 @@
 import { Skill } from '../models/skill.js'
 
 function index(req, res) {
+  console.log(req.time);
   Skill.find({})
   .then(skills => {
     res.render('skills/index', {
-      skills: skills
+      skills: skills,
+      time: req.time
     })
   })
   .catch(error => {
